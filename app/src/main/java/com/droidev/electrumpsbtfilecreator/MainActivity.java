@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
             checkBluetoothAndSendFile();
         } catch (Exception e) {
             Toast.makeText(this, "Error saving file", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show();
         }
     }
 
